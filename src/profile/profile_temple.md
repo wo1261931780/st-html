@@ -1,4 +1,5 @@
-[//]: # (居中组件)
+[//]: # "居中组件"
+
 <h1 align="center">
   <br>st-html.github.io<br>
 </h1>
@@ -21,10 +22,11 @@
 <p align="center">
     <a href="profile_temple.md">English</a>
     ·
-    <a href="profile_temple_cn.md">简体中文</a>    
+    <a href="profile_temple_cn.md">简体中文</a>
 <p/>
 
 ![Alt](https://repobeats.axiom.co/api/embed/45a614ea242e2cdb9bb06d089e86d2784c4fa8c8.svg "Repobeats analytics image")
+
 </div>
 
 <p>
@@ -74,7 +76,8 @@
 
 ## Donation
 
-[//]: # (捐献，这里还没有绑定账号)
+[//]: # "捐献，这里还没有绑定账号"
+
 <div>
 <a href="https://ko-fi.com/re"><img src="https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" style="margin-bottom: 4px;" height="30px" target="_blank"></a>
 <a href="https://patreon.com/re"><img src="https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white" style="margin-bottom: 4px;" height="30px" target="_blank"></a>
@@ -82,8 +85,7 @@
 <a href=""><img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" style="margin-bottom: 4px;" height="30px" target="_blank"></a>
 </div>
 
-
-[//]: # (贡献者自动生成)
+[//]: # "贡献者自动生成"
 
 ## Thanks
 
@@ -98,7 +100,8 @@ project. Special thanks to
 
 ---
 
-[//]: # (感谢jetbrains提供的证书)
+[//]: # "感谢jetbrains提供的证书"
+
 <a href="https://jb.gg/OpenSourceSupport">
 <p align="center">
     <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg" height="150">
