@@ -19,9 +19,9 @@
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/wo1261931780/st-java.github.io?color=%23ca3e47&style=for-the-badge">
 
 <p align="center">
-    <a href="profile_temple.md">English</a>
+    <a href="README.md">English</a>
     ·
-    <a href="profile_temple_cn.md">简体中文</a>    
+    <a href="README_cn.md">简体中文</a>   
 <p/>
 
 [//]: # (st-html.github.io)
