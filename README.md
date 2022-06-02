@@ -15,7 +15,8 @@
 
 ---
 
-<p align="center">html5+css3………………………………………………</p>
+<p align="center">Learn html5+css3 from scratch. the project uses several single page compositions, independent of each other, and notes are used for instructions in each component and page. The project uses the latest version of node.js, nvm for node
+package management. Later use elementUI for component presentation and page assembly.</p>
 
 <div align="center">
 
@@ -34,7 +35,8 @@
     <a href="README_cn.md">简体中文</a>
 <p/>
 
-![Alt](https://repobeats.axiom.co/api/embed/45a614ea242e2cdb9bb06d089e86d2784c4fa8c8.svg "Repobeats analytics image")
+[//]: # (st-html.github.io)
+![Alt](https://repobeats.axiom.co/api/embed/b979112ed5a8ef2ae7cbcd9ad27e180a1a993f60.svg "Repobeats analytics image")
 
 </div>
 

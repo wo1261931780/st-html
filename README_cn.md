@@ -1,11 +1,12 @@
 [//]: # (居中组件)
 <h1 align="center">
-  <br>项目名<br>
+  <br>st-html.github.io<br>
 </h1>
 
 ---
 
-<p align="center">项目介绍………………………………………………</p>
+<p align="center">从零开始学习html5+css3。项目使用若干个单页面构成，互相独立，每个组件和page中都使用笔记进行说明。项目使用最新的node.js版本，nvm进行node
+包管理。后期使用elementUI进行组件的展示和页面组装。</p>
 
 <div align="center">
 
@@ -23,7 +24,9 @@
     <a href="profile_temple_cn.md">简体中文</a>    
 <p/>
 
-![Alt](https://repobeats.axiom.co/api/embed/45a614ea242e2cdb9bb06d089e86d2784c4fa8c8.svg "Repobeats analytics image")
+[//]: # (st-html.github.io)
+![Alt](https://repobeats.axiom.co/api/embed/b979112ed5a8ef2ae7cbcd9ad27e180a1a993f60.svg "Repobeats analytics image")
+
 </div>
 
 <p>
