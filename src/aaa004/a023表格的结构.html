@@ -1,0 +1,63 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-04 20:25:55
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-04 20:26:02
+ $ @FilePath: \st-html.github.io\src\aaa004\a023表格的结构.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <table border="1"
+               style="width: 400px;">
+            <caption>
+                <h1>我是表格的标题</h1>
+            </caption>
+            <thead>
+                <tr>
+                    <th>表头1</th>
+                    <th>表头1</th>
+                    <th>表头1</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>我是一行数据</td>
+                    <td>我是一行数据</td>
+                    <td>我是一行数据</td>
+                    <!-- 我是一行数据 -->
+                    <!-- 这里的数据如果多了一行，那么也会直接展示出来，但是和后面的不匹配 -->
+                </tr>
+                <tr>
+                    <td>测试数据</td>
+                    <td>测试数据</td>
+                    <td>测试数据</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <!-- 一个表格，加上不同的标签，主要是方便浏览器渲染 -->
+                <tr>
+                    <td>底部</td>
+                    <td>底部</td>
+                    <td>底部</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+    </body>
+
+</html>
