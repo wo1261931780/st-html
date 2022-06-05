@@ -1,0 +1,48 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-05 20:43:45
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-05 20:43:49
+ $ @FilePath: \st-html.github.io\src\aaa005\a028按钮.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <form action="">
+            <!-- action是提交地址，以后要发送到哪里，就提交到哪里 -->
+            我是输入框：<input type="text">
+            <br>
+            我是密码输入框：<input type="password">
+            <hr>
+            <input type="button"
+                   value="input按钮">
+            <!-- 如果是input出现的按钮，直接在value属性中添加名称就可以 -->
+            <!-- 这里可以发现，不管是input出现的按钮，还是button出现的按钮，
+                只是按钮的样式不一样。 -->
+            <hr>
+
+            <div>我是按钮页面</div>
+            <button>按钮1</button>
+            <button type="submit">我是提交按钮</button>
+            <!-- submit的好处是，如果有后台，而且有数据，
+            那么我提交的时候，直接点击就可以提交，不需要设置任何的js -->
+            <button type="reset">我是重置按钮</button>
+            <!-- 在同一个表单中，点击重置按钮，会自动重置里面的所有内容 -->
+            <!-- reset的前提是存在一个表单域，在域内的所有组件，才会被重置 -->
+        </form>
+    </body>
+
+</html>
