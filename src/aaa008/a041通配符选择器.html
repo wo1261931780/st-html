@@ -1,0 +1,46 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-07 21:01:37
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-07 21:01:41
+ $ @FilePath: \st-html.github.io\src\aaa008\a041通配符选择器.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                color: red;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            /* 一般我们根本不会使用到通配符，因为影响太大 */
+            /* 但是，在实际开发中， */
+            /* 排版需要使用通配符来清除所有的内外边距 */
+            /* 比如margin和padding */
+        </style>
+    </head>
+
+    <body>
+        <div>我是普通文字</div>
+        <div style="color: blue;">我是自己有颜色的文字</div>
+        <!-- 自己有颜色的文字，会在css冲突的时候，默认使用自己的颜色 -->
+        <!-- 简单来说，还是就近原则 -->
+        <div>我是被通配符处理的文字</div>
+        <!-- 这里就是使用通配符，去除了元素的内外边距，从而实现了属性的高度自由 -->
+        <h1>测试一下</h1>
+
+    </body>
+
+</html>

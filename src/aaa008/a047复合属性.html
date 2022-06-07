@@ -1,0 +1,43 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-07 22:04:19
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-07 22:04:26
+ $ @FilePath: \st-html.github.io\src\aaa008\a047复合属性.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .demo {
+                /* font-style: italic; */
+                /* font-weight: 700; */
+                /* font-size: 50px; */
+                /* font-family: 'Courier New', Courier, monospace; */
+                /* 重复添加标签是一件很烦人的事 */
+                /* 这个时候可以使用复合属性 */
+                font: italic 700 50px 宋体;
+                /* 其他选择器，也可以带上这种复合属性 */
+                /* font: 50px 宋体; */
+                /* 复合属性，次序不能颠倒 */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>我是普通文字</div>
+        <hr>
+        <div class="demo">我是有特殊属性的文字</div>
+    </body>
+
+</html>
