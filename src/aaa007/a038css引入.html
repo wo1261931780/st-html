@@ -11,44 +11,45 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible"
-              content="IE=edge">
-        <meta name="viewport"
-              content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-            .show {
-                color: grey;
-                font-size: 50px;
-            }
-        </style>
-        <!-- 样式的引入有两种方法 -->
-        <!-- 一种方法直接使用网页内定义出来的style标签和对应的属性 -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="IE=edge"
+			  http-equiv="X-UA-Compatible" />
+		<meta content="width=device-width, initial-scale=1.0"
+			  name="viewport" />
+		<title>Document</title>
+		<style>
+			.show {
+				color: grey;
+				font-size: 50px;
+			}
+		</style>
+		<!-- 样式的引入有两种方法 -->
+		<!-- 一种方法直接使用网页内定义出来的style标签和对应的属性 -->
 
-        <link rel="stylesheet"
-              href="showme.css">
-        <!-- 还有一种像上面这样，直接引入一个样式表 -->
-        <!-- 样式表的好处在于 -->
-        <!-- 可以减少重复代码 -->
-    </head>
+		<link href="showme.css"
+			  rel="stylesheet" />
+		<!-- 还有一种像上面这样，直接引入一个样式表 -->
+		<!-- 样式表的好处在于 -->
+		<!-- 可以减少重复代码 -->
+	</head>
 
-    <body>
-        <div>我是样式测试1</div>
-        <p>我是样式测试2</p>
-        <hr>
-        <div class="show">我是样式测试1</div>
-        <!-- 这里的两个好像都会被加载出来 -->
-        <!-- 规则是： -->
-        <!-- 如果属性1在文件中已经定义，但是页面内没有，就按照页面内的属性展示 -->
-        <!-- 如果两个属性,同时在css文件和页面都有定义 -->
-        <!-- 那么保持就近原则,使用页面内的属性 -->
-        <hr>
-        <div style="color: green; background-color:white">我是div中的属性和文字</div>
-        <!-- 这里面也是按照上面的规则 -->
-
-
-    </body>
+	<body>
+		<div>我是样式测试1</div>
+		<p>我是样式测试2</p>
+		<hr />
+		<div class="show">我是样式测试1</div>
+		<!-- 这里的两个好像都会被加载出来 -->
+		<!-- 规则是： -->
+		<!-- 如果属性1在文件中已经定义，但是页面内没有，就按照页面内的属性展示 -->
+		<!-- 如果两个属性,同时在css文件和页面都有定义 -->
+		<!-- 那么保持就近原则,使用页面内的属性 -->
+		<hr />
+		<div style="color: green; background-color: white">
+			我是div中的属性和文字
+		</div>
+		<!-- 这里面也是按照上面的规则 -->
+		<div align="center">demo</div>
+	</body>
 
 </html>
