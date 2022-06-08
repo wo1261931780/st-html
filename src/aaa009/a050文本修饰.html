@@ -1,0 +1,62 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-08 21:20:41
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-08 21:20:47
+ $ @FilePath: \st-html.github.io\src\aaa009\a050文本修饰.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .demo1 {
+                text-decoration: underline;
+            }
+
+            .demo2 {
+                text-decoration: line-through;
+            }
+
+            .demo3 {
+                text-decoration: overline;
+            }
+
+            .demo4 {
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>我是没有样式的文字</div>
+        <hr>
+        <div class="demo1">我是下划线</div>
+        <hr>
+        <div class="demo2">我是上划线</div>
+        <hr>
+        <div class="demo3">我是删除线</div>
+        <!-- 这里需要注意一下，很多样式的会出现内外生效异常 -->
+        <!-- 主要原因就是内容在哪里，样式具体有没有加对位置 -->
+        <hr>
+        <a href="#">我是超链接</a>
+        <br>
+        <a href="#"
+           class="demo4">我是超链接</a>
+        <!-- #避免跳转，永远在当前页面 -->
+        <!-- 很多时候为了样式的统一，会在原生的标签上取消多余属性，方便我们做定制 -->
+        <hr>
+
+    </body>
+
+</html>
