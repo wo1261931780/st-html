@@ -1,0 +1,42 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-11 15:40:08
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-11 15:40:36
+ $ @FilePath: \st-html.github.io\src\aaa011\a057子代选择器.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div>p {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>我是div</div>
+        <div>我是父代
+            <p>我是子代p标签</p>
+            <div>我是div的子标签
+                <br>
+                <p>我是div的孙子标签</p>
+                <!-- 这种子代选择器 -->
+                <!-- 不管是哪一级,只要是div中的p标签,那么就可以生效 -->
+                <a>我是孙子代a标签</a>
+            </div>
+        </div>
+    </body>
+
+</html>
