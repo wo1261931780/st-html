@@ -1,0 +1,54 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-12 19:15:13
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-12 19:15:20
+ $ @FilePath: \st-html.github.io\src\aaa012\a066背景属性连写.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .demo {
+                background-color: #ccc;
+                width: 300px;
+                height: 300px;
+                background-image: url(../img/demo.png);
+                /* 这里，如果盒子和背景图一样大，就可以直接用url */
+                /* 换句话说，如果不一样大，使用url会导致图片平铺 */
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .demo2 {
+                width: 500px;
+                height: 300px;
+                /* background: #ccc no-repeat center bottom url(../img/demo.png); */
+                /* 这里是可以颠倒顺序的，因为垂直方向和水平方向的字母不同，浏览器可以理解 */
+                /* background: #ccc no-repeat center bottom url(../img/demo.png); */
+                background: #ccc no-repeat 100px 50px url(../img/demo.png);
+                /* 数字顺序的颠倒，会导致位置变化 */
+                /* 因为这里是固定解析x轴和y轴的位置 */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>我是背景连写的准备</div>
+        <div class="demo">我是背景块</div>
+        <hr>
+        <div class="demo2">我是背景块2</div>
+
+    </body>
+
+</html>

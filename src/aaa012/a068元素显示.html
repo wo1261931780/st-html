@@ -1,0 +1,65 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-12 20:11:06
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-12 20:11:10
+ $ @FilePath: \st-html.github.io\src\aaa012\a068元素显示.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div {
+                width: 300px;
+                height: 300px;
+                background-color: #ccc;
+            }
+
+            span {
+                width: 300px;
+                height: 300px;
+                background-color: pink;
+                line-height: 100px;
+                /* 我可以给行内元素设置行间距 */
+                /* 但是增加行间距，也不会改变色块的大小 */
+                /* 因为是根据内容进行变化的 */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>我是块元素</div>
+        <hr>
+        <div>块元素，一定是独占一行的</div>
+        <!-- 同时，宽度默认是父元素的宽度（因为会将其撑满） -->
+        <!-- 高度是内容决定的 -->
+        <!-- 如果我的内容是整个页面，那就是整个页面 -->
+        <hr>
+        <!-- 这里有个特点 -->
+        <!-- 就算我只占用了300px，但是其他的元素还是上不来的 -->
+        <!-- 因为块元素具有独占一行的特性 -->
+        <!-- --------------------------------------------------------------- -->
+        <!-- 其实，显示模式就是显示方式 -->
+        <!-- 比如我div是独占一行的显示方式 -->
+        <!-- 那么就是块元素的显示模式 -->
+        <!-- --------------------------------------------------------------- -->
+        <span>我是span</span>
+        <!-- 这里有个特点是，不可以设置宽高 -->
+        <!-- 如果我设置了宽高，也会出现不生效的情况 -->
+        <hr>
+        <span>我是内容，我可能很多</span>
+        <!-- 这种行内元素，是按照内容的多少来展示的 -->
+        <!-- 我的内容是多少，我的元素就可以占用多少的面积 -->
+    </body>
+
+</html>

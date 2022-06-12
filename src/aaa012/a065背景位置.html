@@ -1,0 +1,53 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-12 18:59:37
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-12 18:59:46
+ $ @FilePath: \st-html.github.io\src\aaa012\a065背景位置.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .demo {
+                background-color: #ccc;
+                width: 500px;
+                height: 500px;
+                background-repeat: no-repeat;
+                background-image: url('../img/demo.png');
+                /* background-position: 0 0; */
+                /* 两个参数分别表示左右的位置 */
+                /* background-position: center right; */
+                /* 分别表示xy两个值 */
+                /* background-position: 50px 100px; */
+                /* 表示向右平移50px，向下平移100px */
+                background-position: -50px -100px;
+                /* 这里可以同时给负数，但是负数不会在区域外面显示 */
+                /* 只会展示出被遮盖的情况 */
+                /* ------------------------------------------------------------ */
+                /* 这里有一个比较简单的理解，左上角就是坐标原点 */
+                /* x轴是正常的，y是反向的 */
+
+
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>背景位置</div>
+        <div class="demo">我是简写出来的div</div>
+
+    </body>
+
+</html>

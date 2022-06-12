@@ -1,0 +1,57 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-12 21:14:39
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-12 21:14:44
+ $ @FilePath: \st-html.github.io\src\aaa012\a072继承特点.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div {
+                color: pink;
+                width: 300px;
+                height: 300px;
+                background-color: black;
+                /* 不是控制文字的属性，例如标签的大小等 */
+                /* 这种属性就无法继承 */
+            }
+
+            body {
+                color: red;
+                /* 一般要继承的属性，就直接放到body里面 */
+                /* 后续所有的属性，都可以进行继承 */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>我是继承属性
+            <p>我是div内部的段落标签，我也变色了</p>
+        </div>
+        <p>但凡是字，的属性，全部都可以继承</p>
+        <!-- 比如我说，字体的颜色是red，然后大小是50px -->
+        <!-- 那么我的子元素是可以直接继承的 -->
+        <!-- -------------------------------------------------------------------- -->
+        <div>
+            <a href="#">我是超链接</a>
+            <h1>我是标题</h1>
+            <!-- 上面的两个元素，都在内部有自己固定的css -->
+            <!-- 所以在继承的时候，a标签的颜色设置无效 -->
+            <!-- h1的大小设置无效 -->
+        </div>
+
+    </body>
+
+</html>
