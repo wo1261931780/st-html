@@ -2,6 +2,16 @@
  $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
  $ @Date: 2022-06-11 22:30:24
  $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-12 10:54:59
+ $ @FilePath: \st-html.github.io\src\aaa011\a062背景色.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-11 22:30:24
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
  $ @LastEditTime: 2022-06-11 22:30:29
  $ @FilePath: \st-html.github.io\src\aaa011\a062背景色.html
  $ @Description: 1111
@@ -18,9 +28,27 @@
         <meta name="viewport"
               content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <style>
+            div {
+                width: 300px;
+                height: 300px;
+                text-align: center;
+                /* background-color: #ccc; */
+                /* background-color: rgba(16, 122, 195, 0.5); */
+                /* 0.5表示50%的透明度 */
+                /* background-color: rgba(16, 122, 195, 0.9); */
+                /* 0.9表示90%透明度 */
+                /* 数值越大，透明度越低，透视能力越差 */
+                background-color: rgba(16, 122, 195, .9);
+                /* 可以直接省略0，效果一样 */
+            }
+        </style>
     </head>
 
     <body>
+        <div>我是背景色</div>
+        <!-- 如果一个标签，没有事先说明背景颜色，那么默认是透明的 -->
+        <!-- transparent=0 -->
 
     </body>
 
