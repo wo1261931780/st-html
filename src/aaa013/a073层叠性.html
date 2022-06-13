@@ -1,0 +1,46 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-13 19:58:50
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-13 20:29:12
+ $ @FilePath: \st-html.github.io\src\aaa013\a073层叠性.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .demo {
+                color: green;
+            }
+
+            div {
+                font-size: 50px;
+            }
+
+            /* 这也是一种层叠性的体现  */
+            /* 首先是颜色，然后颜色和字体大小重叠一遍  */
+        </style>
+    </head>
+
+    <body>
+        <div>我是测试</div>
+        <hr>
+        <!-- 不同的选择器，优先级也不一样 -->
+        <!-- 只有优先级相同的时候,层叠性才会生效 -->
+        <div class="demo">测试样式修改</div>
+
+
+
+    </body>
+
+</html>
