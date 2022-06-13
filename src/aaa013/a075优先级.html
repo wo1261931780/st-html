@@ -1,0 +1,59 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-13 21:26:00
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-13 21:34:00
+ $ @FilePath: \st-html.github.io\src\aaa013\a075优先级.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #demo2 {
+                color: brown;
+            }
+
+            .demo {
+                color: green;
+            }
+
+            div {
+                color: blue;
+                font-size: 30px !important;
+                /* 首先，要在body底下加，这样才区分继承关系，避免自定义的样式失效 */
+                /* 然后，要在分号之前加，这样强调一个属性 */
+
+            }
+
+            body {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>我是优先级页面</p>
+        <p>一个选择器，能选中的范围越广，他的优先级就越低</p>
+        <hr>
+        <p>我是颜色测试</p>
+        <div>我是颜色测试</div>
+        <div class="demo">我是颜色测试</div>
+        <div class="demo"
+             id="demo2">我是颜色测试</div>
+        <!-- 优先级按照上面的顺序，依次降低 -->
+
+
+    </body>
+
+</html>
