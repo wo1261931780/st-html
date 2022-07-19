@@ -15,7 +15,25 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<style>
+			.father {
+				color: red;
+			}
+			.son {
+				color: pink;
+			}
+			p #demo {
+				color: blue;
+			}
+		</style>
 	</head>
 
-	<body></body>
+	<body>
+		<!-- 如果一个标签，存在单个选择器，只需要按照优先级展示就可以 -->
+		<!-- 但是出现了多个选择器共存的时候，就需要根据权重叠加计算 -->
+		<!-- 首先看不同选择器的个数，个数越多，优先级越高 -->
+		<div class="father">
+			<p class="son" id="demo">我是样式结果</p>
+		</div>
+	</body>
 </html>
