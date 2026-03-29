@@ -9,6 +9,47 @@
 <p align="center">Learn html5+css3 from scratch. the project uses several single page compositions, independent of each other, and notes are used for instructions in each component and page. The project uses the latest version of node.js, nvm for node
 package management. Later use elementUI for component presentation and page assembly.</p>
 
+## 📊 项目架构图
+
+```mermaid
+graph TB
+    subgraph "前端技术栈"
+        A[st-html] --> B[HTML5]
+        A --> C[CSS3]
+        A --> D[JavaScript]
+    end
+    
+    subgraph "构建工具"
+        E[Node.js 16.15.3] --> F[项目构建]
+        G[NVM] --> E
+        H[NPM] --> F
+    end
+    
+    subgraph "UI框架"
+        I[ElementUI 2.15.7] --> J[组件展示]
+        J --> K[页面组装]
+    end
+    
+    subgraph "项目结构"
+        L[单页组件] --> M[独立页面]
+        M --> N[组件注释]
+        M --> O[页面说明]
+    end
+    
+    subgraph "开发环境"
+        P[VS Code] --> Q[代码编辑]
+        R[PowerShell] --> S[命令执行]
+    end
+    
+    F --> A
+    K --> A
+    
+    style A fill:#4CAF50,stroke:#2E7D32,color:#fff
+    style E fill:#2196F3,stroke:#1565C0,color:#fff
+    style I fill:#FF9800,stroke:#F57C00,color:#fff
+    style P fill:#9C27B0,stroke:#6A1B9A,color:#fff
+```
+
 <div align="center">
 
 <img alt="GitHub" src="https://img.shields.io/github/license/wo1261931780/st-html.github.io?style=for-the-badge" >
