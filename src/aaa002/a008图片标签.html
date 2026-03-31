@@ -1,0 +1,44 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-04 10:38:51
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-04 10:39:12
+ $ @FilePath: \st-html.github.io\src\aaa002\a008图片标签.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <p>我是图片标签测试</p>
+        <!-- 下面的src代表属性名，双引号代表属性值 -->
+        <!-- img是类似资源标签的存在，src就是引用资源的目录 -->
+        <!-- ./代表的是当前路径下，这里要求的是同个目录 -->
+        <img src="./demo.png"
+             alt="测试图片">
+        <!-- 其实一个标签里面，可以加无限的属性 -->
+        <!-- 这里的alt，实际上就是属性名 -->
+        <!-- 属性名的存在，主要是防止资源不能正常加载 -->
+        <!-- 说人话就是，如果一个img可以正常显示，那么就是一张图片，如果不能，那就显示alt的名称 -->
+        <br>
+        <!-- 图片标签之间，好像也是没有换行的。所以要手动加一个 -->
+        <img src="1658.png"
+             alt="我是图片，但是显示错误">
+        <br>
+        <img src="./demo.png"
+             alt="我是图片"
+             title="鼠标悬浮，title就会展示出来">
+    </body>
+
+</html>

@@ -1,0 +1,52 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-12 11:21:07
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-12 11:21:15
+ $ @FilePath: \st-html.github.io\src\aaa012\a064平铺问题.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div {
+                width: 500px;
+                height: 500px;
+                background-color: #ccc;
+                background-image: url(../img/demo.png);
+                background-repeat: no-repeat;
+                /* 平铺属性 */
+                /* 可以设置是否平铺，x平铺，y平铺 */
+                /* 但是不支持斜着 */
+            }
+
+            div.demo {
+                /* 交集选择器： */
+                /* 带有demo类的div标签才可以生效 */
+                background-repeat: repeat-x;
+                text-align: end;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>我是图片平铺</div>
+        <p>一个盒子，背景色和背景图是不冲突的</p>
+        <p>展示的优先顺序是：</p>
+        <p>文本——背景图——背景色</p>
+        <div class="demo">我是x轴平铺</div>
+
+
+    </body>
+
+</html>

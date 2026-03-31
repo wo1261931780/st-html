@@ -1,0 +1,74 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-04 20:39:55
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-04 20:40:01
+ $ @FilePath: \st-html.github.io\src\aaa004\a024合并单元格.html
+ $ @Description: 1111tabl
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <table border="1"
+               style="width: 400px;">
+            <caption>表格名称</caption>
+            <thead>
+                <tr>
+                    <th>表头1</th>
+                    <th>表头2</th>
+                    <th>表头3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>我是内容1</td>
+                    <td rowspan="2">我是内容2</td>
+                    <!-- 首先要删除其他行的数据 -->
+                    <!-- 因为合并单元格，实际上是将原来的单元格数量扩大到两倍 -->
+                    <!-- 然后确定要合并的单元格的数量 -->
+                    <td>我是内容3</td>
+                </tr>
+                <tr>
+                    <td>我是内容1</td>
+                    <td>我是内容3</td>
+                </tr>
+                <tr>
+                    <td>我是内容1</td>
+                    <td>我是内容2</td>
+                    <td>我是内容3</td>
+                </tr>
+                <tr>
+                    <td>我是内容1</td>
+                    <td>我是内容2</td>
+                    <td>我是内容3</td>
+                </tr>
+                <tr>
+                    <td>我是内容1</td>
+                    <td colspan="2">我是内容2</td>
+                    <!-- 同理，跨列合并，直接删除其他列的就可以 -->
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>底部</td>
+                    <td>底部</td>
+                    <td>底部</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </body>
+
+</html>

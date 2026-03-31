@@ -1,0 +1,53 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-12 21:05:17
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-12 21:05:23
+ $ @FilePath: \st-html.github.io\src\aaa012\a071嵌套准则.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div {
+                background-color: #ccc;
+                width: 300px;
+                height: 300px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>我是块元素</div>
+        <div>
+            <p>我是段落</p>
+            <p>=Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, non, voluptates aliquid earum numquam
+                facilis deserunt voluptatibus culpa itaque excepturi vitae necessitatibus totam libero sequi iusto
+                similique quae ipsam enim!</p>
+        </div>
+        <p>
+            <h1>我是测试标题</h1>
+            <!-- 这里不能进行嵌套，因为浏览器无法直接解析 -->
+            <!-- 结果是，h1会独立展示，同时外面的p标签会被自动加上结尾符 -->
+        </p>
+        <a href="#">
+            <div>点击我就会跳转页面</div>
+            <div>我是a内部的元素</div>
+            <!-- a内部元素可以嵌套任意的元素 -->
+            <!-- 换句话来说，任何元素，都可以变成一个跳转链接 -->
+            <!-- 平时我们点击淘宝的logo，直接跳转就是因为这个 -->
+        </a>
+
+    </body>
+
+</html>

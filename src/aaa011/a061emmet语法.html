@@ -1,0 +1,73 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-11 21:50:46
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-11 21:50:50
+ $ @FilePath: \st-html.github.io\src\aaa011\a061emmet语法.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .demo {
+                /* w300+h300+bgc */
+                /* 直接生成宽高和背景色 */
+                width: 300px;
+                height: 300px;
+                background-color: pink;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>我是emmet语法</div>
+        <hr>
+        <div class="demo">.demo就可以直接生成一个带有demo类的div标签</div>
+        <hr>
+        <div id="one">直接输入#one就可以生成id为one的div</div>
+        <hr>
+        <span id="box">span#box，生成id为box的span标签</span>
+        <hr>
+        <span>span+div,生成同级span和div</span>
+        <div>span+div,生成同级span和div</div>
+        <hr>
+        <ol>
+            <!-- 在ol中生成li，父子级关系直接使用>即可 -->
+            <li>我是li</li>
+        </ol>
+        <hr>
+
+        <ul>
+            <!-- ul>li{$}*3 -->
+            <!-- 首先输入父子级关系 -->
+            <!-- 然后确定需要三个元素 -->
+            <!-- 在中间生成index的引用 -->
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <hr>
+        <!-- ul>li{a,b,c,d,e}*5 -->
+        <!-- 如果会直接在括号内写内容 -->
+        <!-- 就只会生成对应的重复标签 -->
+        <ul>
+            <li>a,b,c,d,e</li>
+            <li>a,b,c,d,e</li>
+            <li>a,b,c,d,e</li>
+            <li>a,b,c,d,e</li>
+            <li>a,b,c,d,e</li>
+        </ul>
+
+    </body>
+
+</html>

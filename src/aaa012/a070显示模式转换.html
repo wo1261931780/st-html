@@ -1,0 +1,58 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-12 20:49:19
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-12 20:49:24
+ $ @FilePath: \st-html.github.io\src\aaa012\a070显示模式转换.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div {
+                background-color: #ccc;
+                width: 300px;
+                height: 300px;
+            }
+
+            .demo {
+                display: inline;
+            }
+
+            .demo2 {
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>我是普通的块元素</div>
+        <!-- 首先，这里div自带换行 -->
+        <!-- 然后下面的行内元素，只能自己在新的一行展示 -->
+        <!-- 同时，因为是行内元素，所以要按照元素的内容量来确定大小 -->
+
+        <div class="demo">我是被转换后的块元素</div>
+        <!-- 这里因为是行内元素，所以可以一行存在两个 -->
+        <div class="demo">我是被转换后的块元素</div>
+        <!-- 但是后面还是div，所以还会在新的一行展示 -->
+        <div>我是普通的块元素</div>
+        <hr>
+        <div class="demo2">我是行内块元素</div>
+        <!-- 行内块元素的特性，同一行展示，同时可以设置宽高 -->
+        <!-- 这里有颜色，相当于继承了div的全局特性 -->
+        <!-- 但是又有类选择器的行内属性 -->
+        <div class="demo2">我是行内块元素</div>
+
+    </body>
+
+</html>

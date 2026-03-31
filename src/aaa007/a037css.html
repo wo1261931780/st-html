@@ -1,0 +1,77 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-06 22:28:54
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-06 22:28:58
+ $ @FilePath: \st-html.github.io\src\aaa007\a037demo.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* demo是风格的名称 */
+            /* 一个风格底下会有很多的属性和属性特征 */
+            /* color是属性名称，后面跟着就是属性的值 */
+            .demo {
+                color: red;
+            }
+
+            /* 其实这里也可以看出来，css一共有两种选择方案 */
+            /* 第一种使用标签对应的属性，只有是这个属性，那么就可以实现颜色变化 */
+            /* 第二种需要指定属性的名称 */
+            /* 一般就直接使用.名称+属性 */
+            p {
+                color: blue;
+            }
+
+            .demo2 {
+                font-size: 20px;
+                color: grey;
+            }
+
+            /* 不过也可以这么理解: */
+            /* 我直接写pxxx,css就会将其认为是一个属性 */
+            /* 如果我加了点号,那么css就能识别出,这是我自定义出来的东西 */
+
+            .demo3bg {
+                background-color: grey;
+                color: white;
+            }
+
+            .demo4 {
+                width: 200px;
+                height: 100px;
+                background-color: grey;
+                color: white;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <div>demo</div>
+        <div class="demo">我是加了颜色的字</div>
+        <hr>
+        <p>我是测试文字</p>
+        <hr>
+        <div class="demo2">我是测试文字2</div>
+        <hr>
+        <div class="demo3bg">=Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos iusto quam non
+            asperiores voluptatum
+            saepe et maiores quia nemo neque iure, adipisci inventore placeat eius! Libero ab est iusto eveniet!</div>
+        <hr>
+        <div class="demo4">我是测试颜色块</div>
+    </body>
+
+</html>

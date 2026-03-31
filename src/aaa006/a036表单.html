@@ -1,0 +1,94 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-06 22:07:50
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-06 22:07:54
+ $ @FilePath: \st-html.github.io\src\aaa006\a036表单.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge" />
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1>我是大标题</h1>
+        <hr />
+        <form action="">
+            我是输入框：<input type="text"
+                   name=""
+                   id="" />
+            <br />
+            <!-- 注意input是默认不换行的 -->
+            性别：<label for="">
+                <input type="radio"
+                       name="sex" />男</label>
+            <label for="">
+                <input type="radio"
+                       name="sex"
+                       checked />女</label>
+            <br />
+            所在城市：<select name=""
+                    id="">
+                <option value="">我是1号</option>
+                <option value=""
+                        selected>我是2号</option>
+                <option value="">我是3号</option>
+            </select>
+            <br />
+
+            婚姻状态：<label for=""><input type="radio" />未婚</label>
+            <label for=""><input type="radio" />已婚</label>
+            <label for=""><input type="radio" />保密</label>
+            <br />
+
+            喜欢的类型：<label for=""><input type="checkbox" />可爱</label>
+            <label for=""><input type="checkbox" />性感</label>
+            <label for=""><input type="checkbox" />御姐</label>
+            <label for=""><input type="checkbox" />测试</label>
+            <label for=""><input type="checkbox" />测试2</label>
+            <br />
+
+            个人介绍：
+            <br />
+            <textarea name="demoarea"
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="我是文本域">
+			</textarea>
+            <br />
+            <h3>我承诺：</h3>
+            <ul>
+                <li>我是1号重点</li>
+                <li>我是2号重点</li>
+                <li>我是3号重点</li>
+            </ul>
+
+            <br />
+
+
+            <label>
+                <input type="checkbox">我承诺上述全部属实
+                <!-- 这里有个东西没有讲，如果label中存在一个for属性 -->
+                <!-- 那么我点击也不会出现对应的选中 -->
+                <!-- 换句话说，相当于for空指针了 -->
+            </label>
+
+            <br />
+            <button type="submit"
+                    value="">提交</button>
+            <button type="reset">重置</button>
+        </form>
+    </body>
+
+</html>

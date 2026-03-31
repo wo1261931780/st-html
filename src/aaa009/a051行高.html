@@ -1,0 +1,54 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-08 21:42:08
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-08 21:42:13
+ $ @FilePath: \st-html.github.io\src\aaa009\a051行高.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .demo {
+                line-height: 50px;
+            }
+
+            .demo2 {
+                line-height: 1.5;
+                /* 一般直接写数字就是倍数 */
+                /* 如果直接写了1，那就是取消上下行间距 */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>我是行高测试 </div>
+        <p class="demo">
+            =Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, cum aperiam sint sed in
+            ab
+            dolores nisi
+            autem assumenda aliquid possimus numquam fuga maiores vel, deserunt dignissimos inventore? Voluptas,
+            facere.
+        </p>
+        <!-- 这里有一个比较坑的 -->
+        <!-- 字体的行间距是上下间距， -->
+        <!-- 换句话说，我第一行下面距离是20px，第二行上面距离是20px -->
+        <!-- 那么展示出来的间距就是40px -->
+        <hr>
+        <p class="demo2">=Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus modi quasi incidunt
+            enim voluptates
+            magnam doloribus soluta quo, assumenda quae magni rem! Nisi, omnis alias reprehenderit libero fuga
+            voluptatibus quaerat.</p>
+    </body>
+
+</html>

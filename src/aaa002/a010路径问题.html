@@ -1,0 +1,47 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-04 11:28:22
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-04 11:28:38
+ $ @FilePath: \st-html.github.io\src\aaa002\a010路径问题.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div>解决路径问题</div>
+        <!-- 目前使用的路径，分为绝对路径和相对路径 -->
+        <!-- 绝对路径，本地就是盘符所在的位置 -->
+        <!-- 同时，网络上的http开头+www也是绝对路径  -->
+        <!-- 相对路径，就是./xxx这种形式，按照文件的所在位置进行判断的 -->
+        <!-- 类似linux操作系统和mac系统，都是没有盘符存在的，统一用斜杠代替 -->
+        <p>如果是同级目录，直接使用文件名或者./文件名即可</p>
+        <img src="./demo1.png"
+             alt="我是图片">
+        <img src="demo1.png"
+             alt="">
+        <hr>
+        <p>下面来测试在其他目录访问图片资源</p>
+        <img src="../img/demo.png"
+             alt="我是表情包"
+             title="其他目录测试">
+        <!-- 其他路径访问资源，如果是上级目录，就需要使用../号来表示 -->
+        <!-- 如果是同级目录，但是是下级文件夹，那么直接使用文件夹名/文件名，即可 -->
+
+
+
+    </body>
+
+</html>

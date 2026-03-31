@@ -1,0 +1,49 @@
+<!--
+ $ @Author: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @Date: 2022-06-04 10:55:40
+ $ @LastEditors: liujiajun 45444154+wo1261931780@users.noreply.github.com
+ $ @LastEditTime: 2022-06-04 10:56:07
+ $ @FilePath: \st-html.github.io\src\aaa002\a009图片宽高设置.html
+ $ @Description: 1111
+ $ @
+ $ @Copyright (c) 2022 by liujiajun 45444154+wo1261931780@users.noreply.github.com, All Rights Reserved.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <img src="./demo1.png"
+             alt="我是图片"
+             title="测试图片的宽高影响">
+        <br>
+        <img src="./demo1.png"
+             alt="width单独存在"
+             width="200px"
+             title="我只有width存在">
+        <hr>
+        <!-- 这里还有一个小问题 -->
+        <!-- 如果我添加了宽度为"200px"，那么在我本地的环境中，图片会被插件悬浮出来 -->
+        <!-- 因为插件会帮我展示图片的原始大小 -->
+        <!-- 同时，图片的名称会在悬浮出来的内容中展示 -->
+        <img src="./demo1.png"
+             alt="只有height存在"
+             height="100px"
+             title="我只有height存在">
+        <hr>
+        <img src="./demo1.png"
+             alt="宽高属性都存在，但是没有等比例缩放"
+             title="没有等比例缩放"
+             height="100px"
+             width="150px">
+    </body>
+
+</html>

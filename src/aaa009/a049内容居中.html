@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+              content="IE=edge">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div {
+                text-align: center;
+            }
+
+            .demo {
+                text-align: center;
+                /* 不管是图片文字还是什么 */
+                /* 这里都可以直接居中 */
+                /* 因为这个标签是内容居中，只要是内容都可以生效 */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>我是内容</div>
+
+        <h1>我是大标题</h1>
+        <hr>
+        <div>
+            <img src="../img/demo.png"
+                 alt="我是图片"
+                 class="demo">
+            <!-- 这里，图就是img -->
+            <!-- 所以直接给img加标签不会生效 -->
+            <!-- 换句话来理解， -->
+            <!-- 我对齐的是内容，而内容在父级标签里面 -->
+        </div>
+
+    </body>
+
+</html>
